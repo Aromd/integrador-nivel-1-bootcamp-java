@@ -1,3 +1,10 @@
+.border-red {
+    border: 2px solid red !important;
+}
+
+.border-blue {
+    border: 2px solid blue !important;
+}
 
 :root{
     /*colors*/
@@ -20,10 +27,38 @@ nav {
     background-color: var(--self-secondary-color) !important;
 }
 
-.border-red {
-    border: 2px solid red !important;
+.hero__container {
+    height: 100vh;
 }
 
-.border-blue {
-    border: 2px solid blue !important;
+.hero__info {
+    height: 60%;
+}
+
+.hero__info span {
+    display: block;
+    border-radius: 4px;
+    background-color: var(--self-secondary-color);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hero__info::before {
+        content: url('../assets/images/left-icon.svg');
+        position: relative;
+        left: -5rem;
+    }
+    
+    .hero__info::after {
+        content: url('../assets/images/right-icon.svg');
+        position: relative;
+        right: -5rem;
+    }
+}
+
+.hero-image__container {
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
