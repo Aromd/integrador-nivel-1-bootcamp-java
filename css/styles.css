@@ -1,0 +1,29 @@
+
+:root{
+    /*colors*/
+    --self-primary-color: #0d69ab; 
+    --self-secondary-color: #69a944;
+    --self-tertiary-color: #1384d6;
+    --self-white-color: #FFFFFF;
+    /*font-sizes*/
+    --self-main-title: 4rem;
+    --self-section-title: 3rem;
+    --self-main-paragraph: 1.5rem;
+    --self-small-paragraph: 1.125rem;
+}
+
+nav {
+    background-color: var(--self-primary-color) !important;
+}
+
+.btn {
+    background-color: var(--self-secondary-color) !important;
+}
+
+.border-red {
+    border: 2px solid red !important;
+}
+
+.border-blue {
+    border: 2px solid blue !important;
+}
