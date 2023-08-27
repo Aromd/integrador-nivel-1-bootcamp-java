@@ -1,3 +1,10 @@
+.border-red {
+    border: 2px solid red !important;
+}
+
+.border-blue {
+    border: 2px solid blue !important;
+}
 
 :root{
     /*colors*/
@@ -5,13 +12,10 @@
     --self-secondary-color: #69a944;
     --self-tertiary-color: #1384d6;
     --self-white-color: #FFFFFF;
-    /*font-sizes*/
-    --self-main-title: 4rem;
-    --self-section-title: 3rem;
-    --self-main-paragraph: 1.5rem;
-    --self-small-paragraph: 1.125rem;
 }
 
+
+/* navbar */
 nav {
     background-color: var(--self-primary-color) !important;
 }
@@ -20,10 +24,54 @@ nav {
     background-color: var(--self-secondary-color) !important;
 }
 
-.border-red {
-    border: 2px solid red !important;
+/* hero */
+.hero__container {
+    height: 80vh;
 }
 
-.border-blue {
-    border: 2px solid blue !important;
+@media only screen and (min-width: 992px) {
+
+    .hero__container {
+        height: 120vh;
+    }
 }
+
+.hero__info {
+    height: 45%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hero__info::before {
+        content: url('../assets/images/left-icon.svg');
+        position: relative;
+        left: -5rem;
+    }
+    
+    .hero__info::after {
+        content: url('../assets/images/right-icon.svg');
+        position: relative;
+        right: -5rem;
+    }
+}
+
+.hero-image__container {
+    height: 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.hero__info span, footer p:first-child {
+    display: block;
+    border-radius: 4px;
+    background-color: var(--self-secondary-color);
+}
+
+/* footer */
+
+.footer__container {
+    background-color: var(--self-primary-color);
+}
+
