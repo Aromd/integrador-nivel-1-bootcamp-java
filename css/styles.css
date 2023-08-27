@@ -14,6 +14,8 @@
     --self-white-color: #FFFFFF;
 }
 
+
+/* navbar */
 nav {
     background-color: var(--self-primary-color) !important;
 }
@@ -22,24 +24,20 @@ nav {
     background-color: var(--self-secondary-color) !important;
 }
 
-.hero__info {
-    height: 45%;
-}
-
+/* hero */
 .hero__container {
     height: 80vh;
 }
 
-.hero__info span {
-    display: block;
-    border-radius: 4px;
-    background-color: var(--self-secondary-color);
+@media only screen and (min-width: 992px) {
+
+    .hero__container {
+        height: 120vh;
+    }
 }
 
-.card__ejes {
-    height: 10.5rem;
-    width: 10.5rem;
-    background-color: var(--self-primary-color) !important;
+.hero__info {
+    height: 45%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -57,13 +55,6 @@ nav {
     }
 }
 
-@media only screen and (min-width: 992px) {
-
-    .hero__container {
-        height: 120vh;
-    }
-}
-
 .hero-image__container {
     height: 55%;
     background-size: cover;
@@ -71,3 +62,16 @@ nav {
     background-position-y: center;
     background-position-x: center;
 }
+
+.hero__info span, footer p:first-child {
+    display: block;
+    border-radius: 4px;
+    background-color: var(--self-secondary-color);
+}
+
+/* footer */
+
+.footer__container {
+    background-color: var(--self-primary-color);
+}
+

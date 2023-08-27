@@ -1,3 +1,9 @@
 .home-image {
     background-image: url('../assets/images/hero-home.jpg');
 }
+
+/* cards */
+.card__ejes {
+    min-width: fit-content !important;
+    background-color: var(--self-primary-color) !important;
+}
