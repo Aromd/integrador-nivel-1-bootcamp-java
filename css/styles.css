@@ -12,11 +12,6 @@
     --self-secondary-color: #69a944;
     --self-tertiary-color: #1384d6;
     --self-white-color: #FFFFFF;
-    /*font-sizes*/
-    --self-main-title: 4rem;
-    --self-section-title: 3rem;
-    --self-main-paragraph: 1.5rem;
-    --self-small-paragraph: 1.125rem;
 }
 
 nav {
@@ -27,18 +22,24 @@ nav {
     background-color: var(--self-secondary-color) !important;
 }
 
-.hero__container {
-    height: 100vh;
+.hero__info {
+    height: 45%;
 }
 
-.hero__info {
-    height: 60%;
+.hero__container {
+    height: 80vh;
 }
 
 .hero__info span {
     display: block;
     border-radius: 4px;
     background-color: var(--self-secondary-color);
+}
+
+.card__ejes {
+    height: 10.5rem;
+    width: 10.5rem;
+    background-color: var(--self-primary-color) !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -56,9 +57,17 @@ nav {
     }
 }
 
+@media only screen and (min-width: 992px) {
+
+    .hero__container {
+        height: 120vh;
+    }
+}
+
 .hero-image__container {
-    height: 60%;
+    height: 55%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
+    background-position-x: center;
 }
