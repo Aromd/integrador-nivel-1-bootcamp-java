@@ -12,8 +12,8 @@
     --self-secondary-color: #69a944;
     --self-tertiary-color: #1384d6;
     --self-white-color: #FFFFFF;
+    --self-white-input-color: #ffffffa0;
 }
-
 
 /* navbar */
 nav {
@@ -63,7 +63,7 @@ nav {
     background-position-x: center;
 }
 
-.hero__info span, footer p:first-child {
+.hero__info span {
     display: block;
     border-radius: 4px;
     background-color: var(--self-secondary-color);
@@ -75,3 +75,24 @@ nav {
     background-color: var(--self-primary-color);
 }
 
+footer p:first-child {
+    display: block;
+    width: fit-content;
+    background-color: var(--self-secondary-color);
+}
+
+/*footer form*/
+
+input, textarea, input::placeholder{
+    background-color: var(--self-tertiary-color) !important;
+    border-color: var(--self-tertiary-color) !important;
+    color: var(--self-white-color) !important;
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--self-white-input-color) !important;
+}
+
+textarea {
+    resize: none !important;
+}
