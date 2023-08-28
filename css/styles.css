@@ -21,6 +21,7 @@ nav {
 }
 
 .btn {
+    border-color: #69a944 !important;
     background-color: var(--self-secondary-color) !important;
 }
 
