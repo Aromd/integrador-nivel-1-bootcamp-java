@@ -1,3 +1,13 @@
 .proyecto-image {
     background-image: url('../assets/images/hero-proyecto.jpg');
 }
+
+/* cards */
+.card__ejes {
+    min-width: fit-content !important;
+    background-color: var(--self-primary-color) !important;
+}
+
+.self__quote {
+    background-color: var(--self-secondary-color);
+}
