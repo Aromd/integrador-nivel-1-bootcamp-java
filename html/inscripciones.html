@@ -48,10 +48,66 @@
     </header>
 
     <main>
-        <section class="hero__container container_fluid">
-            <div class="hero__info d-flex align-items-center justify-content-center">
+        <section class="hero__container inscripciones__container container_fluid">
+            <div class="hero__info inscripciones__info d-flex align-items-center justify-content-center">
                 <h1 class="fw-bold lh-base"><span class="text-light text-center lh-base px-5">Inscripciones</span></h1>
             </div>
+        </section>
+
+        <section class="container">
+          <div class="row">
+
+              <div class="card border-0 col-12 col-md-6 pb-5">
+                <img src="../assets/images/inscripciones.jpg" class="card-img-top" alt="niña-en-clase-de-robotica">
+                <div class="card-body">
+                  <h5 class="card-title">Requisitos de inscripción</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Tener de 5 a 11 años</li>
+                    <li class="list-group-item">Contar con el acompañamiento familiar
+                      durante el ciclo lectivo</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <p class="fw-bold fs-5 pb-4">Para comenzar con el proceso de inscripción deberán completar el siguiente formulario:</p>
+                <form>
+                  <div class="mb-3">
+                    <label for="inputParentName" class="form-label">Nombre y apellido del Padre, Madre o Tutor <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="inputParentName">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputStudentName" class="form-label">Nombre y apellido del alumno/a <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="inputStudentName">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputEmailRegister" class="form-label">Email de contacto <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="inputEmailRegister">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPhone" class="form-label">Número de teléfono <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="inputPhone">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label d-block pb-1">Turno <span class="text-danger">*</span></label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="turnoMañana" value="mañana" checked>
+                      <label class="form-check-label" for="turnoMañana">Mañana</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="turnoTarde" value="tarde">
+                      <label class="form-check-label" for="turnoTarde">Tarde</label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputMessageRegister" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="inputMessageRegister" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+
+          </div>
         </section>
 
     </main>
