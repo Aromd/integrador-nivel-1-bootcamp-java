@@ -1,3 +1,16 @@
+:root{
+    /*colors*/
+    --self-primary-color: #0d69ab; 
+    --self-secondary-color: #69a944;
+    --self-tertiary-color: #1384d6;
+    --self-white-color: #FFFFFF;
+    --self-white-input-color: #ffffffa0;
+}
+
 .somos-image {
     background-image: url('../assets/images/hero-somos.jpg');
+}
+
+.card-header {
+    background-color: var(--self-primary-color) !important;
 }
