@@ -69,28 +69,28 @@
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-1.jpg" alt="" />
+                    <img src="../assets/images/gallery-1.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-2.jpg" alt="" />
+                    <img src="../assets/images/gallery-2.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-3.jpg" alt="" />
+                    <img src="../assets/images/gallery-3.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-4.jpg" alt="" />
+                    <img src="../assets/images/gallery-4.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-5.jpg" alt="" />
+                    <img src="../assets/images/gallery-5.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-6.jpg" alt="" />
+                    <img src="../assets/images/gallery-6.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-7.jpg" alt="" />
+                    <img src="../assets/images/gallery-7.jpg" alt="niños-jugando" />
                   </li>
                   <li class="glide__slide">
-                    <img src="../assets/images/gallery-8.jpg" alt="" />
+                    <img src="../assets/images/gallery-8.jpg" alt="niños-jugando" />
                   </li>
                 </ul>
               </div>
@@ -196,18 +196,18 @@
         </div>
 
         <div class="col-12 col-md-6 pt-5 pt-md-0">
-          <form>
+          <form id="contact-form">
             <div class="mb-3">
               <label for="nameInput" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nameInput" placeholder="Ingresá tu nombre">
+              <input type="text" name="name" class="form-control" id="nameInput" placeholder="Ingresá tu nombre">
             </div>
             <div class="mb-3">
               <label for="emailInput" class="form-label">Email</label>
-              <input type="text" class="form-control" id="emailInput" placeholder="Ingresá tu email">
+              <input type="text" name="email" class="form-control" id="emailInput" placeholder="Ingresá tu email">
             </div>
             <div class="mb-3">
               <label for="messageInput" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="messageInput" rows="3" placeholder="Contanos en qué podemos ayudarte. 200 caracteres"></textarea>
+              <textarea class="form-control" name="message" id="messageInput" rows="3" placeholder="Contanos en qué podemos ayudarte. 200 caracteres"></textarea>
             </div>
             <button class="btn">Enviar</button>
           </form>
@@ -238,6 +238,9 @@
       });
 
       glide.mount();
+    
     </script>
+    <script src="../utils/feedback.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

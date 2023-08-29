@@ -1,11 +1,3 @@
-.border-red {
-    border: 2px solid red !important;
-}
-
-.border-blue {
-    border: 2px solid blue !important;
-}
-
 :root{
     /*colors*/
     --self-primary-color: #0d69ab; 
@@ -96,4 +88,15 @@ footer input::placeholder, footer textarea::placeholder{
 
 textarea {
     resize: none !important;
+}
+
+/* form feedback */
+
+.feedback-error input,
+.feedback-error textarea {
+  border: 1px solid red !important;
+}
+
+.feedback-error p {
+  color: red !important;
 }
