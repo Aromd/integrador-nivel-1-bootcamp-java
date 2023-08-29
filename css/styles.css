@@ -1,0 +1,102 @@
+:root{
+    /*colors*/
+    --self-primary-color: #0d69ab; 
+    --self-secondary-color: #69a944;
+    --self-tertiary-color: #1384d6;
+    --self-white-color: #FFFFFF;
+    --self-white-input-color: #ffffffa0;
+}
+
+/* navbar */
+nav {
+    background-color: var(--self-primary-color) !important;
+}
+
+.btn {
+    border-color: #69a944 !important;
+    background-color: var(--self-secondary-color) !important;
+}
+
+/* hero */
+.hero__container {
+    height: 80vh;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .hero__container {
+        height: 120vh;
+    }
+}
+
+.hero__info {
+    height: 45%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hero__info::before {
+        content: url('../assets/images/left-icon.svg');
+        position: relative;
+        left: -5rem;
+    }
+    
+    .hero__info::after {
+        content: url('../assets/images/right-icon.svg');
+        position: relative;
+        right: -5rem;
+    }
+}
+
+.hero-image__container {
+    height: 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.hero__info span {
+    display: block;
+    border-radius: 4px;
+    background-color: var(--self-secondary-color);
+}
+
+/* footer */
+
+.footer__container {
+    background-color: var(--self-primary-color);
+}
+
+footer p:first-child {
+    display: block;
+    width: fit-content;
+    background-color: var(--self-secondary-color);
+}
+
+/*footer form*/
+
+footer input, footer textarea, footer input::placeholder{
+    background-color: var(--self-tertiary-color) !important;
+    border-color: var(--self-tertiary-color) !important;
+    color: var(--self-white-color) !important;
+}
+
+footer input::placeholder, footer textarea::placeholder{
+    color: var(--self-white-input-color) !important;
+}
+
+textarea {
+    resize: none !important;
+}
+
+/* form feedback */
+
+.feedback-error input,
+.feedback-error textarea {
+  border: 1px solid red !important;
+}
+
+.feedback-error p {
+  color: red !important;
+}

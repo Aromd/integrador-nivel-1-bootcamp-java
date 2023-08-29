@@ -1,0 +1,7 @@
+.actividades-image {
+    background-image: url('../assets/images/hero-actividades.jpg');
+}
+
+.card-header {
+    background-color: var(--self-primary-color) !important;
+}
